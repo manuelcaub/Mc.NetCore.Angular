@@ -20,6 +20,25 @@
     <Content Remove="ClientApp\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ClientApp\app\enums\category.enum.ts" />
+    <None Remove="ClientApp\app\enums\index.ts" />
+    <None Remove="ClientApp\app\interfaces\category.interface.ts" />
+    <None Remove="ClientApp\app\interfaces\index.ts" />
+    <None Remove="ClientApp\app\interfaces\product.interface.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\app\services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\enums\category.enum.ts" />
+    <TypeScriptCompile Include="ClientApp\app\enums\index.ts" />
+    <TypeScriptCompile Include="ClientApp\app\interfaces\index.ts" />
+    <TypeScriptCompile Include="ClientApp\app\interfaces\product.interface.ts" />
+  </ItemGroup>
+
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
