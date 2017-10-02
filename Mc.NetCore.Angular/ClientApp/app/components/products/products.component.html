@@ -1,0 +1,24 @@
+<h1>Products</h1>
+
+<p *ngIf="!products"><em>Loading...</em></p>
+
+<table class='table' *ngIf="products">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            <td [ngSwitch]="product.category">
+                <span *ngSwitchCase="category.Electronics">Electronics</span>
+                <span *ngSwitchCase="category.Home">Home</span>
+                <span *ngSwitchCase="category.Books">Books</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
