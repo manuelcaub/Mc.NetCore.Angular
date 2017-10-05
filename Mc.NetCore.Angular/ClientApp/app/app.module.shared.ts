@@ -8,12 +8,16 @@ import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
+import { UsersComponent } from './components/users';
+
+import { HttpService } from './shared/services/http.service';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavMenuComponent,
         ProductsComponent,
+        UsersComponent,
         HomeComponent
     ],
     imports: [
@@ -24,9 +28,11 @@ import { ProductsComponent } from './components/products/products.component';
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             { path: 'products', component: ProductsComponent },
+            { path: 'users', component: UsersComponent },
             { path: '**', redirectTo: 'home' }
         ])
-    ]
+    ],
+    providers: [HttpService]
 })
 export class AppModuleShared {
 }
