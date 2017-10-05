@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc.NetCore.Angular", "Mc.NetCore.Angular\Mc.NetCore.Angular.csproj", "{6D39D685-0200-4D10-BB77-CA66E170860C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc.NetCore.Angular", "Mc.NetCore.Angular\Mc.NetCore.Angular.csproj", "{6D39D685-0200-4D10-BB77-CA66E170860C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc.LinqExtensions", "Mc.LinqExtensions\Mc.LinqExtensions.csproj", "{2F898A8D-1DCB-462C-A4D5-AA439D2EA5EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6D39D685-0200-4D10-BB77-CA66E170860C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D39D685-0200-4D10-BB77-CA66E170860C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D39D685-0200-4D10-BB77-CA66E170860C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F898A8D-1DCB-462C-A4D5-AA439D2EA5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F898A8D-1DCB-462C-A4D5-AA439D2EA5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F898A8D-1DCB-462C-A4D5-AA439D2EA5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F898A8D-1DCB-462C-A4D5-AA439D2EA5EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
