@@ -1,8 +1,8 @@
 namespace Mc_NetCore_Angular.Controllers
 {
     using System.Linq;
-    using Microsoft.AspNetCore.Mvc;
     using Mc.NetCore.Angular.Model;
+    using Microsoft.AspNetCore.Mvc;
 
     [Route("api/[controller]")]
     public class ProductsController : Controller
